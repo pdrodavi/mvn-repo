@@ -1,3 +1,6 @@
+# Repo Maven Public
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
 ### Adicione o repositório ao seu pom.xml
 
 ```sh
