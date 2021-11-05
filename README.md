@@ -1,6 +1,9 @@
 # Repo Maven Public
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
+### Contato: developer@pedrodavi.com.br
+#### https://pedrodavi.com.br
+
 ### Adicione o repositório ao seu pom.xml
 
 ```sh
