@@ -11,10 +11,17 @@
 
 ### Dependências disponíveis
 
+### ValidateXmlByXsd
 ```sh
 <dependency>
     <groupId>ValidateXmlByXsd</groupId>
     <artifactId>ValidateXmlByXsd</artifactId>
     <version>1.0.0</version>
 </dependency>
+```
+### Uso
+```sh
+File xml = new File("arquivo.xml");
+File xsd = new File("arquivo.xsd");
+ValidateXmlByXsd.validate(xml, xsd);
 ```
