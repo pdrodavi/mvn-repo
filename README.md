@@ -31,3 +31,32 @@ File xml = new File("arquivo.xml");
 File xsd = new File("arquivo.xsd");
 ValidateXmlByXsd.validate(xml, xsd);
 ```
+
+### Tratamento de imagem
+```sh
+<dependency>
+    <groupId>tratimg</groupId>
+    <artifactId>tratimg</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+### Uso
+```sh
+// Instância
+Tratimg tratimg = new Tratimg();
+
+// Exemplo de métodos
+tratimg.binarizacao();
+tratimg.CalcMediana();
+tratimg.brilho();
+tratimg.contraste();
+tratimg.tonsDeCinza();
+tratimg.calculaHistograma();
+tratimg.calculaHistogramaAcumulado();
+tratimg.equalizacao();
+tratimg.LeJanela3x3();
+tratimg.negativo();
+tratimg.paleta();
+tratimg.passaAlta();
+tratimg.suavizacao();
+```
