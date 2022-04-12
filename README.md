@@ -17,6 +17,21 @@
 
 ### Dependências disponíveis
 
+### Docval - Validador de documentos
+```sh
+<dependency>
+    <groupId>docval</groupId>
+    <artifactId>docval</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+### Uso
+```sh
+boolean cpf = Docval.checkCPF("796.850.250-02");
+boolean cnpj = Docval.checkCNPJ("28.535.777/0001-70");
+boolean ie = Docval.checkIE("44516185-0", "PB");
+```
+
 ### ValidateXmlByXsd
 ```sh
 <dependency>
