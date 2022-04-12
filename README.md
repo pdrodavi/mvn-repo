@@ -1,7 +1,7 @@
 # Repo Maven Public
 ![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
-### Contato: developer@pedrodavi.com.br
+### Contato: pro@pedrodavi.com.br
 #### https://pedrodavi.com.br
 
 ### Adicione o repositório ao seu pom.xml
@@ -16,6 +16,21 @@
 ```
 
 ### Dependências disponíveis
+
+### Docval - Validador de documentos
+```sh
+<dependency>
+    <groupId>docval</groupId>
+    <artifactId>docval</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+### Uso
+```sh
+boolean cpf = Docval.checkCPF("796.850.250-02");
+boolean cnpj = Docval.checkCNPJ("28.535.777/0001-70");
+boolean ie = Docval.checkIE("44516185-0", "PB");
+```
 
 ### ValidateXmlByXsd
 ```sh
@@ -43,7 +58,11 @@ ValidateXmlByXsd.validate(xml, xsd);
 ### Uso
 ```sh
 // Instância
+File file = new File("C:\\teste.png");
+BufferedImage bufferedImage = ImageIO.read(file);
 Tratimg tratimg = new Tratimg();
+BufferedImage bufferedImageOutput = tratimg.tonsDeCinza(bufferedImage);
+ImageIO.write(bufferedImageOutput, "png", new File("C:\\saida.png"));
 
 // Exemplo de métodos
 tratimg.binarizacao();
