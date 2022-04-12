@@ -58,7 +58,11 @@ ValidateXmlByXsd.validate(xml, xsd);
 ### Uso
 ```sh
 // Instância
+File file = new File("C:\\teste.png");
+BufferedImage bufferedImage = ImageIO.read(file);
 Tratimg tratimg = new Tratimg();
+BufferedImage bufferedImageOutput = tratimg.tonsDeCinza(bufferedImage);
+ImageIO.write(bufferedImageOutput, "png", new File("C:\\saida.png"));
 
 // Exemplo de métodos
 tratimg.binarizacao();
